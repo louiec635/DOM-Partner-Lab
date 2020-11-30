@@ -27,5 +27,16 @@ function setImageSize(userAnswer) {
     }
 }
 
-const userAnswer = prompt("Do you want the image to be small or large?");
-setImageSize(userAnswer);
+// const userAnswer = prompt("Do you want the image to be small or large?");
+// setImageSize(userAnswer);
+
+const userColor = prompt("Please enter a color");
+
+let body = document.body;
+
+function bodyColor (userColor) {
+    body.style.backgroundColor = userColor;
+}
+
+bodyColor(userColor);
+
