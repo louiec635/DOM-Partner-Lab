@@ -12,7 +12,7 @@ addNamesToPage(teamNames);
 
 
 
-
+setImageSize("small");
 function setImageSize(userAnswer) {
     const imgElement = document.querySelector("img");
     userAnswer = userAnswer.toLowerCase();
@@ -30,13 +30,23 @@ function setImageSize(userAnswer) {
 // const userAnswer = prompt("Do you want the image to be small or large?");
 // setImageSize(userAnswer);
 
-const userColor = prompt("Please enter a color");
 
-let body = document.body;
 
-function bodyColor (userColor) {
-    body.style.backgroundColor = userColor;
-}
 
-bodyColor(userColor);
+// const userColor = prompt("Please enter a color");
 
+// let body = document.body;
+
+// function bodyColor (userColor) {
+//     body.style.backgroundColor = userColor;
+// }
+
+// bodyColor(userColor);
+
+
+
+
+let teamMembers = [];
+let member = prompt("What is one of your team members?");
+teamMembers.push(member);
+addNamesToPage(teamMembers);
