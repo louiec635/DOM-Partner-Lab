@@ -8,19 +8,20 @@ Please read all three steps before starting each Part and plan your code accordi
 ## Part One
 
 1. Using DOM, display all team members' names in a list.
-2. Prompt the user to enter `ordered` or `unordered` and display the team members' names in an ordered or unordered list respectively. 
-3. Create a button that launches the prompt when clicked.
+2. Prompt the user to enter `Small` or `Large` and size the team's logo respectively. `Small` should be 400 x 250 while `Large` should be 800 x 500. 
+3. Prompt the user for a color and set the background to the color they enter.
+4. Gather the team member names through a series of prompts.
 
 ## Part Two
 
-1. Using the DOM, display the numbers 1 -100 inside a paragraph.
-2. Create a button that displays the numbers when pressed.
-3. Create a text input. When the button is clicked, it should display from 1 to the number the user entered
+1. Prompt the user for their name and create a header the say's `<user's name>'s Resume!` eg. `Kaleb's Resume!`. You should use the DOM to create a new element, not to update an existing element.
+2. Create an array of skills in your JS file. Prompt the user to enter `ordered` or `unordered` and display the user's skills in an ordered or unordered list respectively. 
+3. Prompt the user for a number and remove that skill from their list of skills.
 
 ## Part Three
 
 1. Using DOM, create a button that, when clicked, changes the back background color of the webpage to `cyan`.
-2. Modify the button's functionality to toggle between `cyan` and  `salmon`
-3. Replace the button with a dropdown of color options. When the user selects a color, the background should change to the selected color.
+2. Modify the button's functionality to toggle the background between `cyan` and `salmon`
+3. Add a text input. When the user clicks the button, the background color should change to the color the user entered in the input.
 
 ***Happy Hacking!***
