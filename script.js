@@ -60,3 +60,31 @@ function userResume () {
 }
 
 userResume();
+
+
+
+const skills = ["Javascript", "HTML", "CSS", "Microsoft Paint"];
+const listType = getListType();
+listSkills(listType, skills);
+
+function getListType() {
+  const userTag = prompt("Ordered or unordered list?").toLowerCase();
+  if (userTag === "ordered" || userTag === "ol") {
+    return "ol";
+  }
+  else if (userTag === "unordered" || userTag === "ul") {
+    return "ul";
+  }
+  else {
+    alert("I don't understand");
+  }
+}
+
+function listSkills(listType, skills) {
+  const listElement = document.createElement(listType);
+  document.body.appendChild(listElement);
+  
+  for (const s of skills) {
+    listElement.innerHTML += `<li>${s}</li>`;
+  }
+}
