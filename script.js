@@ -102,6 +102,18 @@
 const buttonElement = document.createElement("button");
 document.body.appendChild(buttonElement);
 
+buttonElement.addEventListener("click", () => { 
+
+  document.body.style.backgroundColor = "cyan"; 
+} 
+);
+
+//Part 2
 buttonElement.addEventListener("click", () => {
+  if (document.body.style.backgroundColor === "cyan") {
+  document.body.style.backgroundColor = "salmon";
+  } else {
   document.body.style.backgroundColor = "cyan";
-})
+  }
+} 
+);
