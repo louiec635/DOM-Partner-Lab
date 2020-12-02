@@ -99,21 +99,31 @@
 
 // Part Three
 // 1.
-const buttonElement = document.createElement("button");
-document.body.appendChild(buttonElement);
+// const buttonElement = document.createElement("button");
+// document.body.appendChild(buttonElement);
 
-buttonElement.addEventListener("click", () => { 
+// buttonElement.addEventListener("click", () => { 
 
-  document.body.style.backgroundColor = "cyan"; 
-} 
-);
+//   document.body.style.backgroundColor = "cyan"; 
+// } 
+// );
 
 //Part 2
+// buttonElement.addEventListener("click", () => {
+//   if (document.body.style.backgroundColor === "cyan") {
+//   document.body.style.backgroundColor = "salmon";
+//   } else {
+//   document.body.style.backgroundColor = "cyan";
+//   }
+// } 
+// );
+
+// Part 3
+const textInputElement = document.createElement("input");
+const buttonElement = document.createElement("button");
+document.body.appendChild(textInputElement);
+document.body.appendChild(buttonElement);
+textInputElement.type = "text";
 buttonElement.addEventListener("click", () => {
-  if (document.body.style.backgroundColor === "cyan") {
-  document.body.style.backgroundColor = "salmon";
-  } else {
-  document.body.style.backgroundColor = "cyan";
-  }
-} 
-);
+  document.body.style.backgroundColor = textInputElement.value;
+});
